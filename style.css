@@ -45,9 +45,11 @@ body {
   color: #fff;
   cursor: text;
   transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  background-color: silver;
 }
 
-.form-input:focus ~ .form-label {
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
   top: -0.5rem;
   font-size: 0.8rem;
   left: 0.8rem;
