@@ -37,6 +37,10 @@ body {
   border-radius: 7px;
 }
 
+.form input:focus {
+  border-color: red;
+}
+
 .form label {
   position: absolute;
   left: 1rem;
